@@ -16,7 +16,7 @@
   "announcement": {
     "_hinweis": "enabled auf false setzen um das Banner komplett auszublenden. image ist der Messeflyer (leerer String = kein Bild/Lightbox).",
     "enabled": true,
-    "image": "images/fair-expo-pioneros.jpg",
+    "image": "images/feria-hogar-flyer.jpg",
     "text": {
       "es": "📅 ¡Visitanos en la Feria Hogar en el Chaco!",
       "de": "📅 Besuch uns auf der Feria Hogar im Chaco!"

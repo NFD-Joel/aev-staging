@@ -4,7 +4,7 @@
   "categories": [
     { "id": "filtros",    "label": { "es": "Filtros Domésticos", "de": "Haushaltsfilter" } },
     { "id": "prefiltros", "label": { "es": "Pre-Filtros",        "de": "Vorfilter" } },
-    { "id": "servicios",  "label": { "es": "Servicios",          "de": "Dienstleistungen" } }
+    { "id": "canillas",   "label": { "es": "Canillas",           "de": "Wasserhähne" } }
   ],
 
   "products": [
@@ -150,7 +150,7 @@
     },
     {
       "id": "canillas",
-      "category": "prefiltros",
+      "category": "canillas",
       "name": "Canillas",
       "suffix": "",
       "image": "images/product-canilla.jpg",
@@ -166,47 +166,6 @@
         "es": "Canillas de doble palanca: una para el agua de red y otra para el agua filtrada de tu Blue Infinity. Elegantes, funcionales y disponibles en varios modelos.",
         "de": "Doppelhebel-Wasserhähne: ein Hebel für Leitungswasser, einer für gefiltertes Wasser aus deinem Blue Infinity. Elegant, funktional und in mehreren Modellen erhältlich."
       }
-    },
-    {
-      "id": "servicio-mantenimiento",
-      "category": "servicios",
-      "type": "service",
-      "name": "Mantenimiento & Servicio",
-      "suffix": "",
-      "icon": "🔧",
-      "price": null,
-      "available": true,
-      "featured": false,
-      "tags": [
-        { "es": "Cambio de filtros", "de": "Filterwechsel" },
-        { "es": "Revisiones", "de": "Wartungscheck" },
-        { "es": "Soporte técnico", "de": "Technischer Support" }
-      ],
-      "desc": {
-        "es": "Después de instalar tu filtro, nos encargamos de todo: cambio de filtros, revisiones periódicas y soporte técnico. Nunca más te preocupés por el mantenimiento.",
-        "de": "Nach der Installation deines Filters kümmern wir uns um alles: Filterwechsel, regelmäßige Inspektionen und technischen Support. Keine Sorgen mehr um die Wartung."
-      },
-      "name_i18n": { "es": "Mantenimiento & Servicio", "de": "Wartung & Service" }
-    },
-    {
-      "id": "servicio-asesoria",
-      "category": "servicios",
-      "type": "service",
-      "name": "Asesoría & Análisis",
-      "suffix": "",
-      "icon": "🔬",
-      "price": null,
-      "available": true,
-      "featured": false,
-      "tags": [
-        { "es": "Análisis de agua", "de": "Wasseranalyse" },
-        { "es": "Asesoría personalizada", "de": "Persönliche Beratung" }
-      ],
-      "desc": {
-        "es": "Analizamos la calidad de tu agua y te recomendamos la solución más adecuada para tu hogar o empresa. Sin compromiso, con resultados concretos.",
-        "de": "Wir analysieren deine Wasserqualität und empfehlen die passende Lösung für deinen Haushalt oder dein Unternehmen. Unverbindlich, mit konkreten Ergebnissen."
-      },
-      "name_i18n": { "es": "Asesoría & Análisis", "de": "Beratung & Analyse" }
     }
   ]
 }

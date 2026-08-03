@@ -75,7 +75,9 @@ ANLEITUNG.md        Redaktions-Anleitung (deutsch): Inhalte ändern ohne Code
 - Future mode (`showPrices: true` + `price` values in `products.json`): prices
   in Gs. are displayed, cart shows a total, checkout sends a WhatsApp order.
   Online payment would be a later step.
-- Services (category `servicios`) are not cart items — they link directly to WhatsApp.
+- Services were removed from the Tienda (2026-08-02, user decision) — maintenance
+  and consulting are handled via the contact section / WhatsApp instead. The
+  `type: "service"` rendering path in `js/shop.js` still exists if ever needed.
 
 ### i18n
 
@@ -95,9 +97,9 @@ ANLEITUNG.md        Redaktions-Anleitung (deutsch): Inhalte ändern ohne Code
 ## Products
 
 Categories: **Filtros Domésticos** (Blue Infinity, Pure, Sparkling, Café, Ambient),
-**Pre-Filtros** (Blue PreFiltro, Blue DecalSor, Canillas), **Servicios**
-(Mantenimiento & Servicio, Asesoría & Análisis). Full specs live in
-`data/products.json` — that file is the single source of truth now.
+**Pre-Filtros** (Blue PreFiltro, Blue DecalSor), **Canillas** (own category —
+2–3 faucet models exist; more can be added as separate products with photos).
+Full specs live in `data/products.json` — that file is the single source of truth now.
 
 ---
 

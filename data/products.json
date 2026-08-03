@@ -1,0 +1,212 @@
+{
+  "_hinweis": "Produktkatalog. Neue Produkte: Block kopieren, id eindeutig halten, Bild nach images/ hochladen. price: null = 'Consultar precio'; Zahl (z.B. 4500000) = Preis in Guaraní, wird angezeigt sobald shop.showPrices in site.json auf true steht. available: false = Produkt wird als 'no disponible' angezeigt aber nicht bestellbar. featured: true = erscheint auf der Startseite.",
+
+  "categories": [
+    { "id": "filtros",    "label": { "es": "Filtros Domésticos", "de": "Haushaltsfilter" } },
+    { "id": "prefiltros", "label": { "es": "Pre-Filtros",        "de": "Vorfilter" } },
+    { "id": "servicios",  "label": { "es": "Servicios",          "de": "Dienstleistungen" } }
+  ],
+
+  "products": [
+    {
+      "id": "blue-infinity",
+      "category": "filtros",
+      "name": "Blue",
+      "suffix": "Infinity",
+      "image": "images/product-blue-infinity.png",
+      "price": null,
+      "available": true,
+      "featured": true,
+      "capacity": { "es": "1,5 L/min flujo directo", "de": "1,5 L/min Direktfluss" },
+      "tags": [
+        { "es": "Sin tanque", "de": "Ohne Tank" },
+        { "es": "UV", "de": "UV" },
+        { "es": "Aqua-Stop", "de": "Aqua-Stop" }
+      ],
+      "desc": {
+        "es": "Sistema de osmosis inversa auto-cebante, sin tanque. Flujo directo de 1,5 L/min. Instalable en cualquier lugar, conectado a una canilla. UV, auto-limpieza cada 96h y filtro PCB de cambio anual. Puede alimentar un Blue Pure desde su salida.",
+        "de": "Selbstansaugendes Umkehrosmosesystem, ohne Tank. Direktfluss von 1,5 L/min. Überall installierbar, am Wasserhahn angeschlossen. UV-Sterilisation, Selbstreinigung alle 96h und jährlich wechselbarer PCB-Filter. Kann einen Blue Pure speisen."
+      }
+    },
+    {
+      "id": "blue-pure",
+      "category": "filtros",
+      "name": "Blue",
+      "suffix": "Pure",
+      "image": "images/product-blue-pure.png",
+      "price": null,
+      "available": true,
+      "featured": true,
+      "capacity": { "es": "4,2 L inmediatos", "de": "4,2 L sofort verfügbar" },
+      "tags": [
+        { "es": "Caliente · Frío · Ambiente", "de": "Warm · Kalt · Ambient" },
+        { "es": "🧊 Hielo", "de": "🧊 Eis" },
+        { "es": "Aqua-Stop", "de": "Aqua-Stop" }
+      ],
+      "desc": {
+        "es": "Dispensador de sobremesa con agua caliente, fría y ambiente. Bomba de presión integrada, 1 L/min. Fabrica hielo. Presets de cantidad, control táctil y parental. Auto-limpieza cada 96h, Aqua-Stop. 29×52×48 cm · 20,8 kg.",
+        "de": "Tischgerät mit heißem, kaltem und Raumtemperaturwasser. Integrierte Druckpumpe, 1 L/min. Eiswürfelbereiter. Mengenvoreinstellungen, Touch-Bedienung und Kindersicherung. Selbstreinigung alle 96h, Aqua-Stop. 29×52×48 cm · 20,8 kg."
+      }
+    },
+    {
+      "id": "blue-sparkling",
+      "category": "filtros",
+      "name": "Blue",
+      "suffix": "Sparkling",
+      "image": "images/product-blue-sparkling.png",
+      "price": null,
+      "available": true,
+      "featured": true,
+      "capacity": { "es": "2,4 L inmediatos", "de": "2,4 L sofort verfügbar" },
+      "tags": [
+        { "es": "💧 Con Gas", "de": "💧 Mit Sprudel" },
+        { "es": "UV", "de": "UV" },
+        { "es": "Aqua-Stop", "de": "Aqua-Stop" }
+      ],
+      "desc": {
+        "es": "Todo lo del Blue Pure más un gasificador integrado. Dispensá agua con gas para gaseosas y bebidas espumantes. Bomba de presión, UV, auto-limpieza cada 96h, Aqua-Stop y control parental. 35,1 kg.",
+        "de": "Alles vom Blue Pure plus integriertem Wassersprudler. Zapfe kohlensäurehaltiges Wasser für Softdrinks direkt aus deinem Filter. Druckpumpe, UV, Selbstreinigung alle 96h, Aqua-Stop und Kindersicherung. 35,1 kg."
+      }
+    },
+    {
+      "id": "blue-cafe",
+      "category": "filtros",
+      "name": "Blue",
+      "suffix": "Café",
+      "image": "images/product-blue-cafe.png",
+      "price": null,
+      "available": true,
+      "featured": false,
+      "capacity": { "es": "2,4 L inmediatos", "de": "2,4 L sofort verfügbar" },
+      "tags": [
+        { "es": "☕ Café", "de": "☕ Kaffee" },
+        { "es": "🧊 Hielo", "de": "🧊 Eis" },
+        { "es": "UV", "de": "UV" }
+      ],
+      "desc": {
+        "es": "El Blue Pure con máquina de café integrada. Espresso, lungo, americano, té y más — con agua 99,9% pura. Fabricador de hielo, UV, auto-limpieza cada 96h, Aqua-Stop y control parental. 29×52×48 cm · 26,1 kg.",
+        "de": "Der Blue Pure mit integrierter Kaffeemaschine. Espresso, Lungo, Americano, Tee und mehr — mit 99,9% reinem Wasser. Eiswürfelbereiter, UV, Selbstreinigung alle 96h, Aqua-Stop und Kindersicherung. 29×52×48 cm · 26,1 kg."
+      }
+    },
+    {
+      "id": "blue-ambient",
+      "category": "filtros",
+      "name": "Blue",
+      "suffix": "Ambient",
+      "image": "images/product-blue-ambient.png",
+      "price": null,
+      "available": true,
+      "featured": false,
+      "capacity": { "es": "5 L de capacidad", "de": "5 L Kapazität" },
+      "tags": [
+        { "es": "Ambiente", "de": "Ambient" },
+        { "es": "Compacto", "de": "Kompakt" },
+        { "es": "Aqua-Stop", "de": "Aqua-Stop" }
+      ],
+      "desc": {
+        "es": "Versión compacta: 22×42×42 cm, 8 kg. Dispensa agua ambiente con presets de cantidad y control táctil. Bomba de presión, 1 L/min, auto-limpieza cada 96h, Aqua-Stop. 5 L de capacidad. Ideal para oficinas.",
+        "de": "Kompaktversion: 22×42×42 cm, 8 kg. Zapft Wasser bei Raumtemperatur mit Mengenvoreinstellungen und Touch-Bedienung. Druckpumpe, 1 L/min, Selbstreinigung alle 96h, Aqua-Stop. 5 L Kapazität. Ideal für Büros."
+      }
+    },
+    {
+      "id": "blue-prefiltro",
+      "category": "prefiltros",
+      "name": "Blue",
+      "suffix": "PreFiltro",
+      "image": "images/product-blue-prefiltro.png",
+      "price": null,
+      "available": true,
+      "featured": false,
+      "capacity": { "es": "Caudal: 5–8 m³/h", "de": "Durchfluss: 5–8 m³/h" },
+      "tags": [
+        { "es": "Entrada del hogar", "de": "Hauseingang" },
+        { "es": "Acero inox.", "de": "Edelstahl" },
+        { "es": "Lavado a contraflujo", "de": "Rückspülbar" }
+      ],
+      "desc": {
+        "es": "Se instala a la entrada de tu hogar. Filtro de acero inoxidable — nunca más cambio de filtro. Limpieza con un solo botón. Manómetro con indicador de presión, presión regulable. Protege tuberías y electrodomésticos. Finura: 90 μm · Caudal: 5–8 m³/h.",
+        "de": "Wird am Hauseingang installiert. Selbstreinigender Edelstahlfilter — kein Filterwechsel mehr nötig. Reinigung per Knopfdruck. Druckmessgerät mit Druckanzeige, regulierbarer Druck. Schützt Rohre und Haushaltsgeräte. Feinheit: 90 μm · Durchfluss: 5–8 m³/h."
+      }
+    },
+    {
+      "id": "blue-decalsor",
+      "category": "prefiltros",
+      "name": "Blue",
+      "suffix": "DecalSor",
+      "image": "images/product-blue-decalsor.png",
+      "price": null,
+      "available": true,
+      "featured": false,
+      "capacity": { "es": "Caudal máx.: 6.100 L/h", "de": "Max. Durchfluss: 6.100 L/h" },
+      "tags": [
+        { "es": "Agua de toda la casa", "de": "Gesamtes Hauswasser" },
+        { "es": "Anti-cal", "de": "Kalkschutz" },
+        { "es": "50 kg sal", "de": "50 kg Salz" }
+      ],
+      "desc": {
+        "es": "Descalcificador por intercambio catiónico: suaviza toda el agua de tu hogar mediante válvula bypass en la tubería principal. Requiere desagüe para el retrolavado. 32×48×105 cm · Sal: 50 kg · Caudal máx.: 6.100 L/h.",
+        "de": "Wasserenthärter nach dem Kationenaustauschprinzip: enthärtet das gesamte Hauswasser über ein Bypass-Ventil in der Hauptleitung. Abwasseranschluss für Rückspülung erforderlich. 32×48×105 cm · Salz: 50 kg · Max. Durchfluss: 6.100 L/h."
+      }
+    },
+    {
+      "id": "canillas",
+      "category": "prefiltros",
+      "name": "Canillas",
+      "suffix": "",
+      "image": "images/product-canilla.jpg",
+      "price": null,
+      "available": true,
+      "featured": false,
+      "capacity": { "es": "2–3 modelos disponibles", "de": "2–3 Modelle erhältlich" },
+      "tags": [
+        { "es": "Doble palanca", "de": "Doppelhebel" },
+        { "es": "Para Blue Infinity", "de": "Für Blue Infinity" }
+      ],
+      "desc": {
+        "es": "Canillas de doble palanca: una para el agua de red y otra para el agua filtrada de tu Blue Infinity. Elegantes, funcionales y disponibles en varios modelos.",
+        "de": "Doppelhebel-Wasserhähne: ein Hebel für Leitungswasser, einer für gefiltertes Wasser aus deinem Blue Infinity. Elegant, funktional und in mehreren Modellen erhältlich."
+      }
+    },
+    {
+      "id": "servicio-mantenimiento",
+      "category": "servicios",
+      "type": "service",
+      "name": "Mantenimiento & Servicio",
+      "suffix": "",
+      "icon": "🔧",
+      "price": null,
+      "available": true,
+      "featured": false,
+      "tags": [
+        { "es": "Cambio de filtros", "de": "Filterwechsel" },
+        { "es": "Revisiones", "de": "Wartungscheck" },
+        { "es": "Soporte técnico", "de": "Technischer Support" }
+      ],
+      "desc": {
+        "es": "Después de instalar tu filtro, nos encargamos de todo: cambio de filtros, revisiones periódicas y soporte técnico. Nunca más te preocupés por el mantenimiento.",
+        "de": "Nach der Installation deines Filters kümmern wir uns um alles: Filterwechsel, regelmäßige Inspektionen und technischen Support. Keine Sorgen mehr um die Wartung."
+      },
+      "name_i18n": { "es": "Mantenimiento & Servicio", "de": "Wartung & Service" }
+    },
+    {
+      "id": "servicio-asesoria",
+      "category": "servicios",
+      "type": "service",
+      "name": "Asesoría & Análisis",
+      "suffix": "",
+      "icon": "🔬",
+      "price": null,
+      "available": true,
+      "featured": false,
+      "tags": [
+        { "es": "Análisis de agua", "de": "Wasseranalyse" },
+        { "es": "Asesoría personalizada", "de": "Persönliche Beratung" }
+      ],
+      "desc": {
+        "es": "Analizamos la calidad de tu agua y te recomendamos la solución más adecuada para tu hogar o empresa. Sin compromiso, con resultados concretos.",
+        "de": "Wir analysieren deine Wasserqualität und empfehlen die passende Lösung für deinen Haushalt oder dein Unternehmen. Unverbindlich, mit konkreten Ergebnissen."
+      },
+      "name_i18n": { "es": "Asesoría & Análisis", "de": "Beratung & Analyse" }
+    }
+  ]
+}

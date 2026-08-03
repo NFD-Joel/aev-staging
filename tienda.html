@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tienda — Agua es Vida</title>
+<meta name="description" content="Filtros de osmosis inversa, pre-filtros y servicios de Agua es Vida. Elegí tus productos y solicitá tu cotización por WhatsApp."/>
+<meta name="author" content="Agua es Vida"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.aguaesvida.com.py/tienda.html"/>
+<meta property="og:site_name" content="Agua es Vida"/>
+<meta property="og:title" content="Tienda — Agua es Vida"/>
+<meta property="og:description" content="Filtros de osmosis inversa, pre-filtros y servicios. Solicitá tu cotización por WhatsApp."/>
+<meta property="og:image" content="https://www.aguaesvida.com.py/og-image.jpg"/>
+<link rel="icon" type="image/png" href="/favicon.png"/>
+<link rel="apple-touch-icon" href="/favicon-192.png"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="shop-page">
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Agua es Vida" class="logo-img"></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i="nav_home">Inicio</a></li>
+    <li><a href="index.html#about" data-i="nav_about">Nosotros</a></li>
+    <li><a href="tienda.html" class="active" data-i="nav_products">Tienda</a></li>
+    <li><a href="index.html#contact" data-i="nav_contact">Contacto</a></li>
+    <li class="lang-switcher">
+      <button type="button" class="lang-btn active" data-lang="es" onclick="setLang('es')">ES</button>
+      <button type="button" class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button>
+    </li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button type="button" class="lang-btn active" data-lang="es" onclick="setLang('es')">ES</button>
+      <button type="button" class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button>
+    </div>
+    <button type="button" class="cart-btn" onclick="openCart()" aria-label="Carrito">
+      <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+      <span class="cart-count"></span>
+    </button>
+    <button type="button" class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ANKÜNDIGUNGSBANNER (Inhalt kommt aus data/site.json) -->
+<div id="announce-bar" class="announce-bar" style="margin-top:71px"></div>
+
+<!-- SHOP -->
+<section class="shop" style="padding-top:130px">
+  <div class="section-label" data-i="shop_label">Tienda</div>
+  <div class="section-title" data-i="shop_title">Productos &amp; Servicios</div>
+  <p class="section-sub" data-i="shop_sub">Elegí tus productos y solicitá tu cotización — te respondemos por WhatsApp.</p>
+  <div class="products-tabs" id="shop-tabs"></div>
+  <div class="products-grid" id="shop-grid">
+    <noscript><p data-i="noscript">Esta página necesita JavaScript para mostrar los productos.</p></noscript>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>Agua es Vida</span> · <span data-i="footer_rights">Todos los derechos reservados.</span> · <a href="index.html" data-i="nav_home">Inicio</a> · <a href="privacy.html" data-i="footer_privacy">Política de Privacidad</a></p>
+</footer>
+
+<!-- WhatsApp Float -->
+<a class="wa-float" data-site="wa-main" href="https://wa.me/595982300202" target="_blank" aria-label="WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.83L.057 23.882a.5.5 0 0 0 .606.61l6.208-1.433A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.894a9.877 9.877 0 0 1-5.026-1.371l-.36-.214-3.733.862.936-3.617-.235-.373A9.865 9.865 0 0 1 2.106 12C2.106 6.533 6.533 2.106 12 2.106S21.894 6.533 21.894 12 17.467 21.894 12 21.894z"/></svg>
+  <span class="wa-float-tooltip" data-i="wa_float_tip">Escribinos</span>
+</a>
+
+<!-- Lightbox (Messeflyer) -->
+<div id="lightbox" class="lightbox">
+  <button type="button" class="lightbox-close" onclick="closeLightbox()">×</button>
+  <img id="lightbox-img" src="" alt="Flyer"/>
+</div>
+
+<!-- Produkt-Modal -->
+<div id="product-modal" class="modal-backdrop"><div class="modal"></div></div>
+
+<!-- Warenkorb -->
+<div id="cart-overlay" class="cart-overlay" onclick="closeCart()"></div>
+<aside id="cart-drawer" class="cart-drawer" aria-label="Carrito">
+  <div class="cart-head">
+    <h3 data-i="cart_title">Tu cotización</h3>
+    <button type="button" onclick="closeCart()" aria-label="Cerrar">×</button>
+  </div>
+  <div class="cart-items" id="cart-items"></div>
+  <div class="cart-foot">
+    <div class="cart-total-row" id="cart-total-row" style="display:none"></div>
+    <textarea id="cart-note" class="cart-note" data-placeholder="cart_note_ph" placeholder="Comentario opcional (ciudad, consulta...)"></textarea>
+    <button type="button" id="cart-send-btn" class="btn btn-cart-send" onclick="sendCartWhatsApp()" data-i="cart_send">Solicitar cotización por WhatsApp</button>
+    <p class="cart-hint" data-i="cart_hint">Te contactamos por WhatsApp para confirmar disponibilidad, precio y entrega.</p>
+    <button type="button" class="cart-clear-btn" onclick="clearCart()" data-i="cart_clear">Vaciar</button>
+  </div>
+</aside>
+
+<script src="js/app.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>

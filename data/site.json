@@ -1,0 +1,43 @@
+{
+  "_hinweis": "Diese Datei steuert Kontaktdaten, Messebanner und Shop-Verhalten. Änderungen hier gehen ohne Code-Anpassung live.",
+
+  "contact": {
+    "whatsapp_main": "595982300202",
+    "whatsapp_main_display": "+595 982 300 202",
+    "whatsapp_chaco": "595982619202",
+    "whatsapp_chaco_display": "+595 982 619 202",
+    "email": "info@aguaesvida.com.py",
+    "website_display": "www.aguaesvida.com.py",
+    "location": "Asunción, Paraguay",
+    "facebook": "https://facebook.com/AguaEsVidaPY",
+    "instagram": "https://instagram.com/aguaesvida_py"
+  },
+
+  "announcement": {
+    "_hinweis": "enabled auf false setzen um das Banner komplett auszublenden. image ist der Messeflyer (leerer String = kein Bild/Lightbox).",
+    "enabled": true,
+    "image": "images/fair-expo-pioneros.jpg",
+    "text": {
+      "es": "📅 ¡Visitanos en la Expo Pioneros del Chaco!",
+      "de": "📅 Besuch uns auf der Expo Pioneros im Chaco!"
+    },
+    "cta": {
+      "es": "Ver flyer",
+      "de": "Flyer ansehen"
+    },
+    "link": ""
+  },
+
+  "hero": {
+    "_hinweis": "Produktbild im Hero-Bereich der Startseite.",
+    "image": "images/product-blue-pure.png",
+    "image_alt": "Blue Pure — dispensador de agua por osmosis inversa"
+  },
+
+  "shop": {
+    "_hinweis": "showPrices auf true setzen sobald Preise in products.json eingetragen sind. Solange false, funktioniert die Tienda als Cotización-Anfrage per WhatsApp.",
+    "showPrices": false,
+    "currency": "Gs.",
+    "orderNumber": "595982300202"
+  }
+}

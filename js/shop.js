@@ -97,7 +97,7 @@ function cardHtml(p) {
   let actions;
   if (isService) {
     const num = (AEV.site.shop && AEV.site.shop.orderNumber) || '595982300202';
-    const msg = encodeURIComponent((AEV.lang === 'de' ? 'Hallo! Ich interessiere mich für: ' : '¡Hola! Me interesa: ') + productName(p, true));
+    const msg = encodeURIComponent(T('wa_interest') + productName(p, true));
     actions = '<div class="product-actions">' +
       '<a class="btn btn-add" href="https://wa.me/' + num + '?text=' + msg + '" target="_blank" rel="noopener">' +
       esc(T('shop_service_cta')) + '</a></div>';

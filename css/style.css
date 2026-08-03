@@ -448,6 +448,10 @@ footer a { color: var(--aqua); }
 }
 
 /* ---------- RESPONSIVE ---------- */
+@media (max-width: 1080px) {
+  .nav-links { gap: 18px; }
+  .lang-btn { padding: 4px 9px; }
+}
 @media (max-width: 1024px) {
   .hero-visual img { max-height: 380px; }
 }

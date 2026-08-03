@@ -79,13 +79,16 @@ ANLEITUNG.md        Redaktions-Anleitung (deutsch): Inhalte ändern ohne Code
   and consulting are handled via the contact section / WhatsApp instead. The
   `type: "service"` rendering path in `js/shop.js` still exists if ever needed.
 
-### i18n
+### i18n — FOUR languages (since 2026-08-02)
 
-- `data/translations.json` holds `es` and `de` dicts; static HTML uses `data-i`
-  / `data-placeholder` attributes; JS-rendered content re-renders on the
-  `aev:lang` custom event. Language persists in `localStorage (aev_lang)`.
-- Product texts are bilingual inside `products.json` (`desc.es` / `desc.de`, etc.).
-- English can be added later as a third key in both JSON files.
+- The site is available in **es, de, en, nl**. `data/translations.json` holds all
+  four dicts; static HTML uses `data-i` / `data-placeholder` attributes;
+  JS-rendered content re-renders on the `aev:lang` custom event. Language
+  persists in `localStorage (aev_lang)`. Fallback is always `es`.
+- Product texts carry all four languages inside `products.json`
+  (`desc.es/de/en/nl`, same for `tags`, `capacity`, category `label`).
+- **RULE (user request): every future text change must be made in all 4
+  languages** — translations.json, products.json and site.json announcement.
 
 ### Cart
 

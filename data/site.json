@@ -19,11 +19,15 @@
     "image": "images/feria-hogar-flyer.jpg",
     "text": {
       "es": "📅 ¡Visitanos en la Feria Hogar en el Chaco!",
-      "de": "📅 Besuch uns auf der Feria Hogar im Chaco!"
+      "de": "📅 Besuch uns auf der Feria Hogar im Chaco!",
+      "en": "📅 Visit us at the Feria Hogar in the Chaco!",
+      "nl": "📅 Bezoek ons op de Feria Hogar in de Chaco!"
     },
     "cta": {
       "es": "Ver flyer",
-      "de": "Flyer ansehen"
+      "de": "Flyer ansehen",
+      "en": "View flyer",
+      "nl": "Flyer bekijken"
     },
     "link": ""
   },

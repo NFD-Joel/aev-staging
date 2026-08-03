@@ -166,13 +166,10 @@ function formData() {
 function sendWhatsApp() {
   if (!validateForm()) return;
   const d = formData();
-  const labels = AEV.lang === 'de'
-    ? { greet: 'Hallo, ich bin', email: 'E-Mail', subject: 'Betreff' }
-    : { greet: 'Hola, soy',      email: 'Email',  subject: 'Asunto'  };
 
-  let text = labels.greet + ' ' + d.name;
-  if (d.email)   text += '\n' + labels.email + ': ' + d.email;
-  if (d.subject) text += '\n' + labels.subject + ': ' + d.subject;
+  let text = T('wa_greet') + ' ' + d.name;
+  if (d.email)   text += '\n' + T('wa_email_label') + ': ' + d.email;
+  if (d.subject) text += '\n' + T('wa_subject_label') + ': ' + d.subject;
   if (d.msg)     text += '\n\n' + d.msg;
 
   const num = (AEV.site.contact && AEV.site.contact.whatsapp_main) || '595982300202';
@@ -183,13 +180,10 @@ function sendWhatsApp() {
 function sendEmail() {
   if (!validateForm()) return;
   const d = formData();
-  const labels = AEV.lang === 'de'
-    ? { greet: 'Hallo, ich bin', subject: 'Anfrage über die Website' }
-    : { greet: 'Hola, soy',      subject: 'Consulta desde la web'   };
-  let body = labels.greet + ' ' + d.name;
-  if (d.email) body += '\nEmail: ' + d.email;
+  let body = T('wa_greet') + ' ' + d.name;
+  if (d.email) body += '\n' + T('wa_email_label') + ': ' + d.email;
   body += '\n\n' + d.msg;
-  const sub = d.subject || labels.subject;
+  const sub = d.subject || T('wa_default_subject');
   const addr = (AEV.site.contact && AEV.site.contact.email) || 'info@aguaesvida.com.py';
   window.location.href = 'mailto:' + addr + '?subject=' + encodeURIComponent(sub) + '&body=' + encodeURIComponent(body);
 }

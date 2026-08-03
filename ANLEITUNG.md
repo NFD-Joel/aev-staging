@@ -56,8 +56,11 @@ auf der Seite automatisch übernommen (Kontaktsektion, Buttons, Float-Button).
 
 ## 5. Texte der Website → `data/translations.json`
 
-Alle festen Texte (Hero, Über uns, Warum AEV, Formular …) in ES und DE.
-Einfach den jeweiligen Text ändern.
+Alle festen Texte (Hero, Über uns, Warum AEV, Formular …) in **vier Sprachen**:
+`es` (Spanisch), `de` (Deutsch), `en` (Englisch), `nl` (Niederländisch).
+
+> ⚠️ **Wichtig:** Textänderungen immer in **allen 4 Sprachen** machen — auch bei
+> Produkttexten in `products.json` und beim Banner in `site.json`.
 
 ## 6. Hero-Produktbild → `data/site.json` → `"hero"`
 
